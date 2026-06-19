@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "home": "Home",
+    "categories": "Categories",
+    "cart": "Cart",
+    "wishlist": "Wishlist",
+    "login": "Login",
+    "signup": "Sign Up",
+    "account": "Account",
+    "logout": "Logout",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero_title": "Discover Your Style",
+    "hero_subtitle": "Shop the latest trends in fashion, electronics, and more",
+    "hero_cta": "Shop Now",
+    "featured_categories": "Featured Categories",
+    "featured_products": "Featured Products",
+    "view_all": "View All"
+  },
+  "product": {
+    "add_to_cart": "Add to Cart",
+    "add_to_wishlist": "Add to Wishlist",
+    "remove_from_wishlist": "Remove from Wishlist",
+    "in_stock": "In Stock",
+    "out_of_stock": "Out of Stock",
+    "related_products": "Related Products",
+    "description": "Description"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "subtotal": "Subtotal",
+    "checkout": "Proceed to Checkout",
+    "remove": "Remove",
+    "quantity": "Quantity",
+    "continue_shopping": "Continue Shopping"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "shipping": "Shipping Information",
+    "review": "Review Order",
+    "place_order": "Place Order",
+    "success_title": "Order Placed!",
+    "success_message": "Thank you for your order. We'll send you a confirmation email shortly.",
+    "back_to_home": "Back to Home",
+    "full_name": "Full Name",
+    "email": "Email",
+    "address": "Address",
+    "city": "City",
+    "country": "Country",
+    "zip": "ZIP Code",
+    "next": "Next",
+    "back": "Back"
+  },
+  "auth": {
+    "login_title": "Welcome Back",
+    "signup_title": "Create Account",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "name": "Full Name",
+    "login_btn": "Login",
+    "signup_btn": "Sign Up",
+    "no_account": "Don't have an account?",
+    "have_account": "Already have an account?",
+    "errors": {
+      "email_invalid": "Invalid email address",
+      "password_min": "Password must be at least 8 characters",
+      "passwords_mismatch": "Passwords do not match",
+      "name_required": "Name is required"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "not_found": "Page not found",
+    "back_home": "Back to Home",
+    "sort_by": "Sort by",
+    "price_asc": "Price: Low to High",
+    "price_desc": "Price: High to Low",
+    "search": "Search"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We are a modern e-commerce platform dedicated to bringing you the best products at the best prices."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Your Name",
+    "email": "Your Email",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Message sent successfully!"
+  }
+}

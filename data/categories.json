@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "apparel",
+    "name_en": "Apparel",
+    "name_ar": "الملابس",
+    "image": "/images/placeholder.jpg"
+  },
+  {
+    "slug": "electronics",
+    "name_en": "Electronics",
+    "name_ar": "الإلكترونيات",
+    "image": "/images/placeholder.jpg"
+  },
+  {
+    "slug": "footwear",
+    "name_en": "Footwear",
+    "name_ar": "الأحذية",
+    "image": "/images/placeholder.jpg"
+  },
+  {
+    "slug": "home",
+    "name_en": "Home & Living",
+    "name_ar": "المنزل والمعيشة",
+    "image": "/images/placeholder.jpg"
+  }
+]
