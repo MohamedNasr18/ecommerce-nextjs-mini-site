@@ -25,8 +25,7 @@ export default async function LocaleLayout({
 
   if (!locales.includes(locale)) notFound();
 
-  const messages = await getMessages();
-
+const messages = await getMessages({ locale });
   return (
     <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
       <body className="min-h-screen flex flex-col bg-white antialiased">
