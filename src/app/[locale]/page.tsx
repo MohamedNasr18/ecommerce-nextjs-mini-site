@@ -4,26 +4,19 @@ import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import ProductCard from '@/components/ProductCard';
 import { Product, Category } from '@/types';
+import productsData from '../../../data/products.json';
+import categoriesData from '../../../data/categories.json';
 
-async function getProducts(): Promise<Product[]> {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/products`, {
-    cache: 'no-store',
-  });
-  if (!res.ok) return [];
-  return res.json();
-}
-
-async function getCategories(): Promise<Category[]> {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/products/categories`, {
-    cache: 'no-store',
-  });
-  if (!res.ok) return [];
-  return res.json();
+export function generateStaticParams() {
+  return [{ locale: 'en' }, { locale: 'ar' }];
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'home' });
+
+  
 
   return {
     title: t('hero_title'),
@@ -50,8 +43,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'home' });
-  const products = await getProducts();
-  const categories = await getCategories();
+ const products = productsData;
+const categories = categoriesData;
   
   const featuredProducts = products.slice(0, 4);
 
