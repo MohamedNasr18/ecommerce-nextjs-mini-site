@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { useForm } from 'react-hook-form';
+import { useForm, UseFormRegisterReturn } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useLocale, useTranslations } from 'next-intl';
 import { CheckCircle2 } from 'lucide-react';
@@ -213,7 +213,7 @@ function Field({
 }: {
   label: string;
   error?: string;
-  inputProps: ReturnType<typeof useForm<ShippingFormData>['register']>;
+inputProps: UseFormRegisterReturn;
   id: string;
   type?: string;
 }) {
