@@ -5,7 +5,7 @@
     "name_ar": "تي شيرت أساسي",
     "price": 19.99,
     "category": "apparel",
-    "image": "/images/placeholder.jpg",
+    "image": "/images/casual1.png",
     "description_en": "A soft and comfortable cotton tee perfect for everyday wear.",
     "description_ar": "تي شيرت قطني ناعم ومريح مثالي للاستخدام اليومي.",
     "inStock": true
@@ -16,7 +16,7 @@
     "name_ar": "جينز سليم فيت",
     "price": 49.99,
     "category": "apparel",
-    "image": "/images/placeholder.jpg",
+    "image": "/images/casual2.png",
     "description_en": "Classic slim fit jeans with a modern cut.",
     "description_ar": "جينز سليم فيت كلاسيكي بقصة عصرية.",
     "inStock": true
@@ -27,7 +27,7 @@
     "name_ar": "سماعات لاسلكية",
     "price": 99.99,
     "category": "electronics",
-    "image": "/images/placeholder.jpg",
+    "image": "/images/casual3.png",
     "description_en": "High quality wireless headphones with noise cancellation.",
     "description_ar": "سماعات لاسلكية عالية الجودة مع خاصية إلغاء الضوضاء.",
     "inStock": true
@@ -38,7 +38,7 @@
     "name_ar": "ساعة ذكية",
     "price": 199.99,
     "category": "electronics",
-    "image": "/images/placeholder.jpg",
+    "image": "/images/casual4.png",
     "description_en": "Feature-packed smart watch with health tracking.",
     "description_ar": "ساعة ذكية مليئة بالمميزات مع تتبع الصحة.",
     "inStock": true
@@ -49,7 +49,7 @@
     "name_ar": "حذاء رياضي للجري",
     "price": 79.99,
     "category": "footwear",
-    "image": "/images/placeholder.jpg",
+    "image": "/images/product1.png",
     "description_en": "Lightweight and breathable running shoes for maximum performance.",
     "description_ar": "حذاء جري خفيف وقابل للتنفس لأقصى أداء.",
     "inStock": true
@@ -60,7 +60,7 @@
     "name_ar": "سنيكرز جلد",
     "price": 89.99,
     "category": "footwear",
-    "image": "/images/placeholder.jpg",
+    "image": "/images/product2.png",
     "description_en": "Premium leather sneakers for a stylish casual look.",
     "description_ar": "سنيكرز جلد فاخر لإطلالة كاجوال أنيقة.",
     "inStock": false
@@ -71,7 +71,7 @@
     "name_ar": "كوب سيراميك",
     "price": 14.99,
     "category": "home",
-    "image": "/images/placeholder.jpg",
+    "image": "/images/product3.png",
     "description_en": "Handcrafted ceramic mug for your morning coffee.",
     "description_ar": "كوب سيراميك مصنوع يدوياً لقهوتك الصباحية.",
     "inStock": true
@@ -82,7 +82,7 @@
     "name_ar": "شمعة معطرة",
     "price": 24.99,
     "category": "home",
-    "image": "/images/placeholder.jpg",
+    "image": "/images/product4.png",
     "description_en": "Long-lasting scented candle with natural ingredients.",
     "description_ar": "شمعة معطرة طويلة الأمد بمكونات طبيعية.",
     "inStock": true
