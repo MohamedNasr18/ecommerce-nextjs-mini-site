@@ -22,13 +22,13 @@ export default function Header() {
   const [wishlistCount, setWishlistCount] = useState(0);
   const accountRef = useRef<HTMLDivElement>(null);
 
-  const totalItems = useCartStore((s) => s.totalItems);
+  const cartItems = useCartStore((s) => s.items);
   const wishlistItems = useWishlistStore((s) => s.items);
   const { user, logout, isAuthenticated } = useAuthStore();
 
   useEffect(() => {
-    setCartCount(totalItems());
-  }, [totalItems]);
+    setCartCount(cartItems.reduce((sum, i) => sum + i.quantity, 0));
+  }, [cartItems]);
 
   useEffect(() => {
     setWishlistCount(wishlistItems.length);
