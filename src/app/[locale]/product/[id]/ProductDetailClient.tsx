@@ -36,8 +36,8 @@ export default function ProductDetailClient({ product }: { product: Product }) {
       </div>
 
       <div>
-        <h1 className="text-3xl font-bold mb-2">{name}</h1>
-        <p className="text-2xl font-semibold mb-4">${product.price.toFixed(2)}</p>
+        <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">{name}</h1>
+        <p className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">${product.price.toFixed(2)}</p>
 
         <span
           className={`inline-block text-sm px-3 py-1 rounded-full mb-4 ${
@@ -52,7 +52,7 @@ export default function ProductDetailClient({ product }: { product: Product }) {
         <h2 className="font-semibold mt-6 mb-2">{t('description')}</h2>
         <p className="text-gray-600 leading-relaxed">{description}</p>
 
-        <div className="flex gap-3 mt-8">
+        <div className="flex gap-2 sm:gap-3 mt-6 sm:mt-8">
           <button
             onClick={() => addToCart(product)}
             disabled={!product.inStock}

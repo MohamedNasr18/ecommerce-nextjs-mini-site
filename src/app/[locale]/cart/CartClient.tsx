@@ -30,16 +30,16 @@ export default function CartClient() {
     <div>
       <h1 className="text-2xl font-bold mb-6">{t('title')}</h1>
 
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-3 gap-4 sm:gap-8">
         <div className="md:col-span-2 space-y-4">
           {items.map(({ product, quantity }) => {
             const name = locale === 'ar' ? product.name_ar : product.name_en;
             return (
               <div
                 key={product.id}
-                className="flex gap-4 border border-gray-200 rounded-lg p-4"
+                className="flex gap-2 sm:gap-4 border border-gray-200 rounded-lg p-3 sm:p-4"
               >
-                <div className="relative w-20 h-20 flex-shrink-0 bg-gray-100 rounded-md overflow-hidden">
+                <div className="relative w-16 sm:w-20 h-16 sm:h-20 flex-shrink-0 bg-gray-100 rounded-md overflow-hidden">
                   <Image src={product.image} alt={name} fill className="object-cover" />
                 </div>
 

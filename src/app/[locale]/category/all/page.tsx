@@ -55,7 +55,7 @@ export default async function AllProductsPage({
           { label: title },
         ]}
       />
-      <h1 className="text-3xl font-bold mb-6">{title}</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold mb-6\">{title}</h1>
       <CategoryClient products={products} locale={locale} />
     </div>
   );

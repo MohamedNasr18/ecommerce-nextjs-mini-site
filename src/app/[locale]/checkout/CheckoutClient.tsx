@@ -78,7 +78,7 @@ export default function CheckoutClient() {
   return (
     <div>
       {/* Step indicator */}
-      <div className="flex items-center gap-2 mb-8 text-sm">
+      <div className="flex items-center gap-1 sm:gap-2 mb-6 sm:mb-8 text-xs sm:text-sm">
         <StepBadge active={step === 'shipping'} done={step === 'review'} label={t('shipping')} />
         <span className="text-gray-300">—</span>
         <StepBadge active={step === 'review'} done={false} label={t('review')} />
@@ -107,7 +107,7 @@ export default function CheckoutClient() {
             inputProps={register('address')}
             id="address"
           />
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-2 sm:gap-4">
             <Field
               label={t('city')}
               error={errors.city?.message}
@@ -139,7 +139,7 @@ export default function CheckoutClient() {
 
       {step === 'review' && shippingData && (
         <div>
-          <div className="border border-gray-200 rounded-lg p-4 mb-6">
+          <div className="border border-gray-200 rounded-lg p-3 sm:p-4 mb-4 sm:mb-6">
             <h2 className="font-semibold mb-2">{t('shipping')}</h2>
             <p className="text-sm text-gray-600">{shippingData.fullName}</p>
             <p className="text-sm text-gray-600">{shippingData.email}</p>
@@ -148,7 +148,7 @@ export default function CheckoutClient() {
             </p>
           </div>
 
-          <div className="border border-gray-200 rounded-lg p-4 mb-6 divide-y">
+          <div className="border border-gray-200 rounded-lg p-3 sm:p-4 mb-4 sm:mb-6 divide-y">
             {items.map(({ product, quantity }) => {
               const name = locale === 'ar' ? product.name_ar : product.name_en;
               return (
@@ -168,7 +168,7 @@ export default function CheckoutClient() {
             </div>
           </div>
 
-          <div className="flex gap-3">
+          <div className="flex gap-2 sm:gap-3">
             <button
               onClick={() => setStep('shipping')}
               className="flex-1 border border-gray-300 py-3 rounded-md font-medium hover:bg-gray-50"

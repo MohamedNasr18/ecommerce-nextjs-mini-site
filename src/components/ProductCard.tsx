@@ -72,11 +72,11 @@ export default function ProductCard({ product }: ProductCardProps) {
         </div>
 
         {/* Content */}
-        <div className="p-4">
-          <h3 className="font-semibold text-slate-900 mb-1 line-clamp-1 group-hover:text-indigo-600 transition-colors">
+        <div className="p-3 sm:p-4">
+          <h3 className="font-semibold text-sm sm:text-base text-slate-900 mb-1 line-clamp-1 group-hover:text-indigo-600 transition-colors">
             {productName}
           </h3>
-          <p className="text-sm text-slate-500 mb-3 line-clamp-2">
+          <p className="text-xs sm:text-sm text-slate-500 mb-3 line-clamp-2">
             {productDescription}
           </p>
 

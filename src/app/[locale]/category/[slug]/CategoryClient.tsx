@@ -46,7 +46,7 @@ export default function CategoryClient({
           {locale === 'ar' ? 'لا توجد منتجات' : 'No products found'}
         </p>
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4">
           {sortedProducts.map((p) => (
             <ProductCard key={p.id} product={p} />
           ))}

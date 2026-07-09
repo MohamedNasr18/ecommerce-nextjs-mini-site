@@ -77,7 +77,7 @@ export default async function CategoryPage({
           { label: name },
         ]}
       />
-      <h1 className="text-3xl font-bold mb-6">{name}</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold mb-6\">{name}</h1>
       <CategoryClient products={categoryProducts} locale={locale} />
     </div>
   );

@@ -51,10 +51,10 @@ const categories = categoriesData;
   return (
     <>
       {/* Hero Section */}
-      <div className="grid grid-cols-12 gap-8 items-center bg-[#f3f0f1] p-8 lg:p-12">
+      <div className="grid grid-cols-12 gap-4 sm:gap-8 items-center bg-[#f3f0f1] p-4 sm:p-8 lg:p-12">
         {/* Left - Text */}
         <div className="col-span-12 md:col-span-6 flex flex-col items-start justify-center gap-6 px-4 md:px-8">
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight text-slate-900">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight text-slate-900">
             {t('hero_title')}
           </h1>
 
@@ -69,7 +69,7 @@ const categories = categoriesData;
             {t('hero_cta')}
           </Link>
 
-          <div className="flex flex-wrap items-center gap-6 pt-4">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-6 pt-4">
             <div className="flex flex-col">
               <span className="text-2xl md:text-3xl font-bold text-slate-900">200+</span>
               <span className="text-slate-500 text-xs md:text-sm">
