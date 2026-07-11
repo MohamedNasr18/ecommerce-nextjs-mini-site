@@ -13,12 +13,12 @@ export default function CartClient() {
 
   if (items.length === 0) {
     return (
-      <div className="text-center py-20">
-        <h1 className="text-2xl font-bold mb-4">{t('title')}</h1>
-        <p className="text-gray-500 mb-6">{t('empty')}</p>
+      <div className="text-center py-12 sm:py-20">
+        <h1 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">{t('title')}</h1>
+        <p className="text-sm sm:text-base text-gray-500 mb-4 sm:mb-6">{t('empty')}</p>
         <Link
           href="/"
-          className="inline-block bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition-colors"
+          className="inline-block bg-black text-white px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base rounded-md hover:bg-gray-800 transition-colors"
         >
           {t('continue_shopping')}
         </Link>
@@ -28,9 +28,9 @@ export default function CartClient() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold mb-6">{t('title')}</h1>
+      <h1 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">{t('title')}</h1>
 
-      <div className="grid md:grid-cols-3 gap-4 sm:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8">
         <div className="md:col-span-2 space-y-4">
           {items.map(({ product, quantity }) => {
             const name = locale === 'ar' ? product.name_ar : product.name_en;
@@ -46,13 +46,13 @@ export default function CartClient() {
                 <div className="flex-1 min-w-0">
                   <Link
                     href={`/product/${product.id}`}
-                    className="font-medium hover:underline line-clamp-1"
+                    className="font-medium text-sm sm:text-base hover:underline line-clamp-1"
                   >
                     {name}
                   </Link>
-                  <p className="text-gray-600 mt-1">${product.price.toFixed(2)}</p>
+                  <p className="text-xs sm:text-sm text-gray-600 mt-1">${product.price.toFixed(2)}</p>
 
-                  <div className="flex items-center gap-3 mt-2">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 mt-2">
                     <div className="flex items-center border border-gray-300 rounded-md">
                       <button
                         onClick={() => updateQuantity(product.id, quantity - 1)}
@@ -76,15 +76,21 @@ export default function CartClient() {
                     <button
                       onClick={() => removeItem(product.id)}
                       aria-label={t('remove')}
-                      className="text-sm text-red-600 hover:underline flex items-center gap-1"
+                      className="text-xs sm:text-sm text-red-600 hover:underline flex items-center gap-1"
                     >
                       <X size={14} />
                       {t('remove')}
                     </button>
                   </div>
+                  <div className="flex items-center justify-between w-full mt-2 sm:hidden">
+                    <span className="text-xs text-gray-500">Subtotal:</span>
+                    <p className="font-semibold">
+                      ${(product.price * quantity).toFixed(2)}
+                    </p>
+                  </div>
                 </div>
 
-                <p className="font-semibold whitespace-nowrap">
+                <p className="font-semibold whitespace-nowrap hidden sm:block">
                   ${(product.price * quantity).toFixed(2)}
                 </p>
               </div>
@@ -92,14 +98,14 @@ export default function CartClient() {
           })}
         </div>
 
-        <div className="border border-gray-200 rounded-lg p-6 h-fit">
-          <div className="flex justify-between mb-4 text-lg font-semibold">
+        <div className="border border-gray-200 rounded-lg p-4 sm:p-6 h-fit">
+          <div className="flex justify-between mb-4 text-base sm:text-lg font-semibold">
             <span>{t('subtotal')}</span>
             <span>${totalPrice().toFixed(2)}</span>
           </div>
           <Link
             href="/checkout"
-            className="block text-center bg-black text-white py-3 rounded-md hover:bg-gray-800 transition-colors"
+            className="block text-center bg-black text-white py-2 sm:py-3 text-sm sm:text-base rounded-md hover:bg-gray-800 transition-colors"
           >
             {t('checkout')}
           </Link>
