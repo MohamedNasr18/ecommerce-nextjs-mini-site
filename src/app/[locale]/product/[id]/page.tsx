@@ -10,7 +10,13 @@ import categories from '../../../../../data/categories.json';
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
 export async function generateStaticParams() {
-  return products.map((p) => ({ id: p.id }));
+  const locales = ['en', 'ar'];
+  return products.flatMap((p) =>
+    locales.map((locale) => ({
+      locale,
+      id: p.id,
+    }))
+  );
 }
 
 export async function generateMetadata({
